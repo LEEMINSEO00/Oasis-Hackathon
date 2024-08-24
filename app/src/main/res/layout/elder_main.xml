@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/elder_appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앱이름"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/elder_bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bell"
+        app:layout_constraintEnd_toStartOf="@+id/elder_setting"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"/>
+
+    <ImageView
+        android:id="@+id/elder_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/setting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintTop_toBottomOf="@id/elder_appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/elder_date"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/elder_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2024년 8월 24일"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/elder_appName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintTop_toBottomOf="@id/elder_appName"
+        app:layout_constraintStart_toEndOf="@id/elder_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/elder_writeTodayDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="오늘의 일기를 기록해주세요"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/elder_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/elder_chooseMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원하는 방법을 선택해주세요"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/elder_writeTodayDiary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:id="@+id/elder_recordMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/record_method"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/elder_chooseMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/elder_cameraMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/camera_method"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/elder_recordMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <!--
+    <ImageButton
+        android:id="@+id/elder_writeMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/write_method"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@id/elder_cameraMethod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+        -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
