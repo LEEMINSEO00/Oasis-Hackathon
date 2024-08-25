@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/alertPopup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/alertQuestion"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp" />
+
+    <TextView
+        android:id="@+id/alertQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="정말 삭제하시겠습니까?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertPopup"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/alertMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="삭제된 일기는 복구가 불가능합니다."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertQuestion"
+        app:layout_constraintBottom_toTopOf="@id/alertCancel" />
+
+    <ImageButton
+        android:id="@+id/alertCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel_pop"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/alertDelete"
+        app:layout_constraintTop_toBottomOf="@id/alertMessage"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageButton
+        android:id="@+id/alertDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_pop"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toEndOf="@id/alertCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alertMessage"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
