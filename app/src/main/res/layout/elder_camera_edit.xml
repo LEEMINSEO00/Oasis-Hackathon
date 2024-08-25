@@ -20,7 +20,7 @@
         android:id="@+id/elder_record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="음성 기록"
+        android:text="촬영 기록"
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -133,7 +133,7 @@
         app:layout_constraintTop_toBottomOf="@+id/canEdit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/rerecord"
+        app:layout_constraintBottom_toTopOf="@id/recamera"
         app:cardElevation="0dp"
         app:cardCornerRadius="16dp"
         android:layout_marginTop="5dp"
@@ -173,29 +173,29 @@
     </androidx.cardview.widget.CardView>
 
     <ImageButton
-        android:id="@+id/rerecord"
+        android:id="@+id/recamera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/rerecord"
+        android:src="@drawable/recamera"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@id/borderGray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/recordComplete"
+        app:layout_constraintEnd_toStartOf="@id/cameraComplete"
         android:layout_marginEnd="3dp"
         android:layout_marginBottom="16dp"/>
 
     <ImageButton
-        android:id="@+id/recordComplete"
+        android:id="@+id/cameraComplete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/complete"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@id/borderGray"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@id/rerecord"
+        app:layout_constraintStart_toEndOf="@id/recamera"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="3dp"/>
+        android:layout_marginStart="3dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
