@@ -168,6 +168,23 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_margin="15dp" />
 
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="글을 입력하세요"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:scrollbars="vertical"
+                android:gravity="top|start"
+                android:background="@null"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:padding="16dp"
+                android:layout_marginTop="30dp"/>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
