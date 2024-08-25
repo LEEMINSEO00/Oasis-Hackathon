@@ -69,10 +69,12 @@
         android:text="2024년 8월 24일"
         android:textSize="25sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/elder_bell"
+        app:layout_constraintTop_toBottomOf="@+id/top_separator_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp" />
+        app:layout_constraintBottom_toTopOf="@id/bottom_separator_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 
     <ImageView
         android:id="@+id/right_arrow"
@@ -96,7 +98,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/elder_writeTodayDiary"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="45dp"/>
 
     <TextView
         android:id="@+id/elder_writeTodayDiary"
