@@ -6,7 +6,7 @@
 
 
     <ImageView
-        android:id="@+id/left_arrow"
+        android:id="@+id/left_arrow_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/left_arrow"
@@ -24,7 +24,7 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/left_arrow"
+        app:layout_constraintStart_toEndOf="@id/left_arrow_back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toStartOf="@id/elder_bell"
         android:layout_marginTop="22dp"
@@ -62,6 +62,19 @@
         app:layout_constraintBottom_toTopOf="@id/elder_date"
         android:layout_marginTop="20dp"/>
 
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintTop_toBottomOf="@id/top_separator_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/elder_date"
+        app:layout_constraintBottom_toTopOf="@id/bottom_separator_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="10dp" />
+
     <TextView
         android:id="@+id/elder_date"
         android:layout_width="wrap_content"
@@ -69,10 +82,25 @@
         android:text="2024년 8월 24일"
         android:textSize="25sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/elder_bell"
+        app:layout_constraintTop_toBottomOf="@+id/top_separator_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp" />
+        app:layout_constraintBottom_toTopOf="@id/bottom_separator_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintTop_toBottomOf="@id/top_separator_line"
+        app:layout_constraintStart_toEndOf="@id/elder_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_separator_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp" />
 
     <View
         android:id="@+id/bottom_separator_line"
@@ -83,13 +111,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/borderGray"
-        android:layout_marginTop="1dp"/>
+        android:layout_marginTop="5dp"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/borderGray"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/elder_date"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_separator_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/recordStart"
