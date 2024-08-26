@@ -28,7 +28,7 @@ class RecordEditActivity : AppCompatActivity() {
 
         val recordCompleteButton = findViewById<ImageButton>(R.id.recordComplete)
         recordCompleteButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ReadActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()

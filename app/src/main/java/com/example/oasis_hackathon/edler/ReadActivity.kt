@@ -1,17 +1,30 @@
 package com.example.oasis_hackathon.edler
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.example.oasis_hackathon.R
+import java.text.SimpleDateFormat
+import java.util.*
 
-class ReadActivity  : AppCompatActivity() {
+class ReadActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.elder_diary)
+
+        val elderDateTextView = findViewById<TextView>(R.id.elder_date)
+
+        val currentDate = getCurrentDate()
+        elderDateTextView.text = currentDate
+
+        elderDateTextView.setOnClickListener {
+            showDatePicker(elderDateTextView)
+        }
 
         val editDiaryButton = findViewById<ImageButton>(R.id.editDiary)
         editDiaryButton.setOnClickListener {
@@ -24,6 +37,7 @@ class ReadActivity  : AppCompatActivity() {
             showDeleteConfirmationDialog()
         }
     }
+
     private fun showDeleteConfirmationDialog() {
         val dialogView = LayoutInflater.from(this).inflate(R.layout.elder_popup, null)
 
@@ -48,5 +62,26 @@ class ReadActivity  : AppCompatActivity() {
         }
 
         alertDialog.show()
+    }
+
+    private fun getCurrentDate(): String {
+        val dateFormat = SimpleDateFormat("yyyy년 MM월 dd일", Locale.getDefault())
+        val currentDate = Date()
+        return dateFormat.format(currentDate)
+    }
+
+    private fun showDatePicker(elderDateTextView: TextView) {
+        val calendar = Calendar.getInstance()
+
+        val year = calendar.get(Calendar.YEAR)
+        val month = calendar.get(Calendar.MONTH)
+        val day = calendar.get(Calendar.DAY_OF_MONTH)
+
+        val datePickerDialog = DatePickerDialog(this, { _, selectedYear, selectedMonth, selectedDay ->
+            val selectedDate = "${selectedYear}년 ${selectedMonth + 1}월 ${selectedDay}일"
+            elderDateTextView.text = selectedDate
+        }, year, month, day)
+
+        datePickerDialog.show() 
     }
 }
