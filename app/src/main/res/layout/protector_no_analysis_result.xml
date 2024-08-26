@@ -4,31 +4,18 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <ImageView
-        android:id="@+id/left_arrow_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/left_arrow"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="28dp"
-        android:layout_marginStart="25dp"/>
-
-
     <TextView
-        android:id="@+id/elder_record"
+        android:id="@+id/elder_appName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="일기 확인"
+        android:text="앱이름"
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        app:layout_constraintStart_toEndOf="@id/left_arrow_back"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/elder_bell"
-        android:layout_marginTop="22dp"
-        android:layout_marginStart="20dp"/>
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/elder_bell"
@@ -59,7 +46,6 @@
         app:layout_constraintTop_toBottomOf="@+id/elder_bell"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/elder_date"
         android:layout_marginTop="20dp"/>
 
     <ImageView
@@ -110,45 +96,31 @@
         app:layout_constraintTop_toBottomOf="@+id/elder_date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/borderGray"
-        android:layout_marginTop="5dp"/>
+        app:layout_constraintBottom_toTopOf="@id/elder_writeTodayDiary"
+        android:layout_marginBottom="45dp"/>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/borderGray"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+    <TextView
+        android:id="@+id/elder_writeTodayDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="작성된 일기가 없습니다."
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintTop_toBottomOf="@+id/bottom_separator_line"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:cardElevation="0dp"
-        app:cardCornerRadius="16dp"
-        android:layout_margin="16dp"
-        app:cardBackgroundColor="@android:color/transparent"
-        android:foreground="@drawable/border_gray" >
+        android:layout_marginTop="150dp" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/editText"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:text="안녕하세요"
-                android:textColor="@color/black"
-                android:scrollbars="vertical"
-                android:gravity="top|start"
-                android:background="@null"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:padding="16dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
+    <ImageView
+        android:id="@+id/background_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elder_writeTodayDiary"
+        android:layout_marginTop="350dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
