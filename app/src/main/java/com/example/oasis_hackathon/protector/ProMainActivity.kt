@@ -37,7 +37,7 @@ class ProMainActivity : AppCompatActivity() {
                     val formattedDate = "${selectedYear}년 ${selectedMonth + 1}월 ${selectedDay}일"
                     elderDate.text = formattedDate
 
-                    if (selectedDay == 24) {
+                    if (selectedDay == 25) {
                         val intent = Intent(this, ProAnalysisActivity::class.java)
                         startActivity(intent)
                     }
