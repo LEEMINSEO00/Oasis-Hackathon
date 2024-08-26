@@ -18,22 +18,27 @@
         android:theme="@style/Theme.OasisHackathon"
         tools:targetApi="31">
 
-        <activity android:name=".edler.LoginActivity"
+        <activity android:name=".elder.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".edler.MainActivity" />
-        <activity android:name=".edler.RecordActivity" />
-        <activity android:name=".edler.CameraActivity" />
-        <activity android:name=".edler.WriteActivity" />
-        <activity android:name=".edler.ReadActivity" />
-        <activity android:name=".edler.EditActivity" />
-        <activity android:name=".edler.RecordEditActivity" />
-        <activity android:name=".edler.CameraEditActivity" />
-        <activity android:name=".edler.CameraProgressActivity" />
+        <activity android:name=".elder.MainActivity" />
+        <activity android:name=".elder.RecordActivity" />
+        <activity android:name=".elder.CameraActivity" />
+        <activity android:name=".elder.WriteActivity" />
+        <activity android:name=".elder.ReadActivity" />
+        <activity android:name=".elder.EditActivity" />
+        <activity android:name=".elder.RecordEditActivity" />
+        <activity android:name=".elder.CameraEditActivity" />
+        <activity android:name=".elder.CameraProgressActivity" />
+        <activity android:name=".protector.ProMainActivity" />
+        <activity android:name=".protector.ProLoginActivity" />
+        <activity android:name=".protector.ProNotificationActivity" />
+        <activity android:name=".protector.ProDiaryActivity" />
+        <activity android:name=".protector.ProAnalysisActivity" />
 
     </application>
 
