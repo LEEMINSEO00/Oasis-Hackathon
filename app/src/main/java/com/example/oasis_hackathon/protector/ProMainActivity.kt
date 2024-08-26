@@ -38,7 +38,7 @@ class ProMainActivity : AppCompatActivity() {
                     elderDate.text = formattedDate
 
                     if (selectedDay == 24) {
-                        //val intent = Intent(this, Activity::class.java)
+                        val intent = Intent(this, ProAnalysisActivity::class.java)
                         startActivity(intent)
                     }
                 },
