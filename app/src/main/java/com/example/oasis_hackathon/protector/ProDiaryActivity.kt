@@ -14,16 +14,17 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-class ProAnalysisActivity : AppCompatActivity() {
+class ProDiaryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.protector_analysis_result)
+        setContentView(R.layout.protector_check_diary)
 
+        /*
         val protectorLoginButton = findViewById<ImageButton>(R.id.checkDiary)
         protectorLoginButton.setOnClickListener {
-            val intent = Intent(this, ProDiaryActivity::class.java)
+            val intent = Intent(this, ProMainActivity::class.java)
             startActivity(intent)
             finish()
-        }
+        }*/
     }
 }
