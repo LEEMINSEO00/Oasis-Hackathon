@@ -1,5 +1,6 @@
 package com.example.oasis_hackathon
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
@@ -15,20 +16,22 @@ class RecordActivity : AppCompatActivity() {
         val recordStartButton = findViewById<ImageButton>(R.id.recordStart)
         val recordFinishButton = findViewById<ImageButton>(R.id.recordFinish)
 
-        //recordFinishButton.setImageResource(R.drawable.record_finish_gray)
-
-        // recordStart 버튼 클릭 리스너 설정
         recordStartButton.setOnClickListener {
             if (!isRecording) {
-                // 녹음 시작 상태
                 recordStartButton.setImageResource(R.drawable.record_pause)
                 recordFinishButton.setImageResource(R.drawable.record_finish_gray)
-                isRecording = true  // 상태를 녹음 중으로 변경
+                isRecording = true
             } else {
-                // 녹음 중지 상태로 되돌림
                 recordStartButton.setImageResource(R.drawable.record_start)
                 recordFinishButton.setImageResource(R.drawable.record_finish)
-                isRecording = false  // 상태를 녹음 중지로 변경
+                isRecording = false
+            }
+        }
+
+        recordFinishButton.setOnClickListener {
+            if (!isRecording) {
+                val intent = Intent(this, RecordEditActivity::class.java)
+                startActivity(intent)
             }
         }
     }

@@ -26,6 +26,8 @@
         <activity android:name=".WriteActivity" />
         <activity android:name=".ReadActivity" />
         <activity android:name=".EditActivity" />
+        <activity android:name=".RecordEditActivity" />
+        <activity android:name=".CameraEditActivity" />
 
     </application>
 
