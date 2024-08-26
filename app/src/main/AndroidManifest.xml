@@ -20,53 +20,6 @@
         android:theme="@style/Theme.OasisHackathon"
         tools:targetApi="31">
 
-        <activity android:name=".protector.ProLoginActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".elder.RecordActivity" />
-        <activity android:name=".elder.CameraActivity" />
-        <activity android:name=".elder.WriteActivity" />
-        <activity android:name=".elder.ReadActivity" />
-        <activity android:name=".elder.EditActivity" />
-        <activity android:name=".elder.RecordEditActivity" />
-        <activity android:name=".elder.CameraEditActivity" />
-        <activity android:name=".elder.CameraProgressActivity" />
-        <activity android:name=".protector.ProMainActivity" />
-        <activity android:name=".protector.ProNotificationActivity" />
-        <activity android:name=".protector.ProDiaryActivity" />
-        <activity android:name=".protector.ProAnalysisActivity" />
-
-    </application>
-
-</manifest>
-
-<!--
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.OasisHackathon"
-        tools:targetApi="31">
-
         <activity android:name=".elder.LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -92,7 +45,52 @@
     </application>
 
 </manifest>
--->
 
 <!-- protector -->
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OasisHackathon"
+        tools:targetApi="31">
+
+        <activity android:name=".protector.ProLoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".elder.RecordActivity" />
+        <activity android:name=".elder.CameraActivity" />
+        <activity android:name=".elder.WriteActivity" />
+        <activity android:name=".elder.ReadActivity" />
+        <activity android:name=".elder.EditActivity" />
+        <activity android:name=".elder.RecordEditActivity" />
+        <activity android:name=".elder.CameraEditActivity" />
+        <activity android:name=".elder.CameraProgressActivity" />
+        <activity android:name=".protector.ProMainActivity" />
+        <activity android:name=".protector.ProNotificationActivity" />
+        <activity android:name=".protector.ProDiaryActivity" />
+        <activity android:name=".protector.ProAnalysisActivity" />
+
+    </application>
+
+</manifest>
+-->
