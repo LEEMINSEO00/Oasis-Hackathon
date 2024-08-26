@@ -61,16 +61,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="20dp"/>
 
-    <ImageView
+    <ProgressBar
         android:id="@+id/progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/progress"
-        app:layout_constraintTop_toBottomOf="@+id/top_separator_line"
-        app:layout_constraintStart_toStartOf="parent"
+        android:indeterminateTint="@color/app_main"
+        android:scaleX="2.0"
+        android:scaleY="2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/progressNotification"
-        android:layout_marginTop="150dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="100dp"/>
 
     <TextView
         android:id="@+id/progressNotification"
