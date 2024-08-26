@@ -82,6 +82,6 @@ class ReadActivity : AppCompatActivity() {
             elderDateTextView.text = selectedDate
         }, year, month, day)
 
-        datePickerDialog.show() 
+        datePickerDialog.show()
     }
 }

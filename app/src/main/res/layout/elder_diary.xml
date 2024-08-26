@@ -161,7 +161,7 @@
                 android:layout_height="match_parent"
                 android:hint=""
                 android:textColorHint="@color/black"
-                android:text="안녕하세요."
+                android:text="안녕하세요. 수정"
                 android:textSize="18sp"
                 android:inputType="textMultiLine"
                 android:textColor="@color/black"
