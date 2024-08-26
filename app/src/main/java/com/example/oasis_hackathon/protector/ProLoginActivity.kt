@@ -13,7 +13,7 @@ class ProLoginActivity : AppCompatActivity() {
 
         val protectorLoginButton = findViewById<ImageButton>(R.id.protector_kakaoLogin)
         protectorLoginButton.setOnClickListener {
-            val intent = Intent(this, ProAddActivity::class.java)
+            val intent = Intent(this, ProMainActivity::class.java)
             startActivity(intent)
             finish()
         }
