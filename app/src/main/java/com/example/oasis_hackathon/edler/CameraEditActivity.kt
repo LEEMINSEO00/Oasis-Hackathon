@@ -3,13 +3,20 @@ package com.example.oasis_hackathon.edler
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.oasis_hackathon.R
+import java.text.SimpleDateFormat
+import java.util.*
 
 class CameraEditActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.elder_camera_edit)
+
+        val elderDateTextView = findViewById<TextView>(R.id.elder_date)
+        val currentDate = getCurrentDate()
+        elderDateTextView.text = currentDate
 
         val rerecordButton = findViewById<ImageButton>(R.id.recamera)
         rerecordButton.setOnClickListener {
@@ -24,5 +31,11 @@ class CameraEditActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+    }
+
+    private fun getCurrentDate(): String {
+        val dateFormat = SimpleDateFormat("yyyy년 MM월 dd일", Locale.getDefault())
+        val currentDate = Date()
+        return dateFormat.format(currentDate)
     }
 }

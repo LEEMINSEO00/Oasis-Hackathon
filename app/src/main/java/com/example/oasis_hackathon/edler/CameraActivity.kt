@@ -6,8 +6,11 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.oasis_hackathon.R
+import java.text.SimpleDateFormat
+import java.util.*
 
 class CameraActivity : AppCompatActivity() {
 
@@ -17,6 +20,10 @@ class CameraActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.elder_camera)
+
+        val elderDateTextView = findViewById<TextView>(R.id.elder_date)
+        val currentDate = getCurrentDate()
+        elderDateTextView.text = currentDate
 
         photoExImageView = findViewById(R.id.photoEx)
 
@@ -53,5 +60,11 @@ class CameraActivity : AppCompatActivity() {
                 photoExImageView.visibility = ImageView.VISIBLE
             }
         }
+    }
+
+    private fun getCurrentDate(): String {
+        val dateFormat = SimpleDateFormat("yyyy년 MM월 dd일", Locale.getDefault())
+        val currentDate = Date()
+        return dateFormat.format(currentDate)
     }
 }

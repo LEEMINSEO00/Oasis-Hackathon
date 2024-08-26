@@ -8,6 +8,8 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.oasis_hackathon.R
+import java.text.SimpleDateFormat
+import java.util.*
 
 class RecordActivity : AppCompatActivity() {
 
@@ -16,6 +18,12 @@ class RecordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.elder_record)
+
+        val elderDateTextView = findViewById<TextView>(R.id.elder_date)
+
+        val currentDate = getCurrentDate()
+
+        elderDateTextView.text = currentDate
 
         val recordStartButton = findViewById<ImageButton>(R.id.recordStart)
         val recordFinishButton = findViewById<ImageButton>(R.id.recordFinish)
@@ -43,5 +51,11 @@ class RecordActivity : AppCompatActivity() {
                 startActivity(intent)
             }
         }
+    }
+
+    private fun getCurrentDate(): String {
+        val dateFormat = SimpleDateFormat("yyyy년 MM월 dd일", Locale.getDefault())
+        val currentDate = Date()
+        return dateFormat.format(currentDate)
     }
 }
