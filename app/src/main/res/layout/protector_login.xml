@@ -16,11 +16,14 @@
         android:layout_marginBottom="200dp"
         />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/protector_kakaoLogin"
         android:layout_width="330dp"
         android:layout_height="50dp"
         android:src="@drawable/kakao_login_large_wide"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@id/protector_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
