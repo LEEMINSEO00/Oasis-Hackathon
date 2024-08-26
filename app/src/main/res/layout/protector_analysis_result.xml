@@ -149,24 +149,25 @@
                         android:id="@+id/analysisSummaryText"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|start"
                         android:hint=""
+                        android:textSize="16sp"
+                        android:inputType="textMultiLine"
+                        android:padding="16dp"
+                        android:scrollbars="vertical"
                         android:text="일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
 특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
 또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다. 일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
 특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
-또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다. 일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
-특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
 또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다."
-                        android:inputType="textMultiLine"
                         android:textColor="@color/black"
-                        android:scrollbars="vertical"
-                        android:gravity="top|start"
-                        android:background="@null"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintBottom_toBottomOf="parent"
-                        android:padding="16dp" />
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -203,38 +204,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/analysisDetailText"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:hint=""
-                        android:text="일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
-특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
-또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다. 일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
-특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
-또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다. 일기를 통해 어르신은 바쁜 일상 속에서도 친구들과의 만남을 소중히 여기신다는 사실이 나타났어요.
-특히, 이웃들과의 소소한 대화와 차 마시는 시간이 큰 위안이 된다고 하셨고, 이러한 교류가 외로움을 덜어준다며 고마움을 표현하셨어요.
-또한, 건강을 위한 작은 운동도 잊지 않고 노력하고 있다는 점이 긍정적인 요소로 보였습니다."
-                        android:inputType="textMultiLine"
-                        android:textColor="@color/black"
-                        android:scrollbars="vertical"
-                        android:gravity="top|start"
-                        android:background="@null"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        android:padding="16dp" />
-
                     <ImageView
-                        android:id="@+id/subscription_alert"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/subscription_alert"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        android:src="@drawable/blur"/>
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
