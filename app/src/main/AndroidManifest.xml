@@ -13,21 +13,21 @@
         android:theme="@style/Theme.OasisHackathon"
         tools:targetApi="31">
 
-        <activity android:name=".LoginActivity"
+        <activity android:name=".edler.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".RecordActivity" />
-        <activity android:name=".CameraActivity" />
-        <activity android:name=".WriteActivity" />
-        <activity android:name=".ReadActivity" />
-        <activity android:name=".EditActivity" />
-        <activity android:name=".RecordEditActivity" />
-        <activity android:name=".CameraEditActivity" />
+        <activity android:name=".edler.MainActivity" />
+        <activity android:name=".edler.RecordActivity" />
+        <activity android:name=".edler.CameraActivity" />
+        <activity android:name=".edler.WriteActivity" />
+        <activity android:name=".edler.ReadActivity" />
+        <activity android:name=".edler.EditActivity" />
+        <activity android:name=".edler.RecordEditActivity" />
+        <activity android:name=".edler.CameraEditActivity" />
 
     </application>
 

@@ -1,4 +1,4 @@
-package com.example.oasis_hackathon
+package com.example.oasis_hackathon.edler
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.widget.ImageButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.oasis_hackathon.R
 
 class ReadActivity  : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
